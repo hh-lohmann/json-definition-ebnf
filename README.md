@@ -1,6 +1,6 @@
 # JSON definition as EBNF with characters of ISO 8859-15
 
-The original definition of JSON on [json.org](https://json.org) is given in [McKeeman form](https://www.crockford.com/mckeeman.html), the IETF RFC's (4627 / 7159 / [8259](https://datatracker.ietf.org/doc/html/rfc8259)) use [ABNF](https://datatracker.ietf.org/doc/html/rfc5234), and its specification in [ECMA 2009](https://ecma-international.org/wp-content/uploads/ECMA-262_5th_edition_december_2009.pdf) and as [ECMA-404](https://ecma-international.org/publications-and-standards/standards/ecma-404/) sport a "human readable" formulation.
+The original definition of JSON on [json.org](https://json.org) is given in [McKeeman form](https://www.crockford.com/mckeeman.html), the IETF RFC's (4627 / 7159 / [8259](https://datatracker.ietf.org/doc/html/rfc8259)) use [ABNF](https://datatracker.ietf.org/doc/html/rfc5234), and its specifications in [ECMA 2009](https://ecma-international.org/wp-content/uploads/ECMA-262_5th_edition_december_2009.pdf) and as [ECMA-404](https://ecma-international.org/publications-and-standards/standards/ecma-404/) sport a "human readable" formulation.
 
 For formal interests like defining a subset of JSON, eg. with restricted object keys, something like an EBNF representation would be a nice base.
 
