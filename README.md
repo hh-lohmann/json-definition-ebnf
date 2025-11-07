@@ -10,7 +10,7 @@ The EBNF here is pragmatically restricted to "Western European" explicit charact
 
 Below naming and order of rules follow json.org, a rule `hex_alpha` acts as providing a character class for hex numbers.
 
-  * **Note that you may encounter even good JSON validators / parsers that will reject pure strings like `"xyz"` and / or pure numbers like `999`, despite being corrext JSON according to the offical definition (see above)** - for pure strings the JSON requirement of surrounding double quotes often is a problem at the input for validators / parsers, i.e. you may have to single quote them as e.g. `'"xyz"'`, but sometimes, as with pure numbers, implementations are just wrong, of course mitigated by the fact that the use cases of using JSON for pure strings or pure numbers are more than rare. **The EBNF below handles pure strings and numbers correctly**.
+  * **Note that you may encounter even good JSON validators / parsers that will reject pure strings like `"xyz"` and / or pure numbers like `999`, despite being corrext JSON according to the offical definition (see above)** - for pure strings the JSON requirement of surrounding double quotes often is a problem at the input for validators / parsers, i.e. you may have to single quote them as e.g. `'"xyz"'`. **Pure strings - including an empty string `""` - and pure numbers may be results of, e.g., hitting a database that returns JSON. *The EBNF below handles pure strings - including empty ones - and numbers correctly***.
 
 ```ebnf
 json = element ;
