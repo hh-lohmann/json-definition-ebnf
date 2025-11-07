@@ -2,7 +2,7 @@
 
 The original definition of JSON on [json.org](https://json.org) is given in [McKeeman form](https://www.crockford.com/mckeeman.html), the IETF RFC's (4627 / 7159 / [8259](https://datatracker.ietf.org/doc/html/rfc8259)) use [ABNF](https://datatracker.ietf.org/doc/html/rfc5234), and its specifications in [ECMA 2009](https://ecma-international.org/wp-content/uploads/ECMA-262_5th_edition_december_2009.pdf) and as [ECMA-404](https://ecma-international.org/publications-and-standards/standards/ecma-404/) sport a "human readable" formulation.
 
-For formal interests like defining a subset of JSON, eg. with restricted object keys, something like an EBNF representation would be a nice base.
+For formal interests like defining a subset of JSON, eg. with restricted object keys, something like an EBNF representation would be a nice base since EBNF might be easier to skim over than ABNF. Of course, [ABNF straight from the RFC's above avoids hussle with character sets](https://hh-lohmann.github.io/json-definition-abnf) that is described in what follows.
 
 Many attempts to express "the" JSON definition in EBNF stall on defining "character": EBNF has no way for character classes like McKeeman's `'0020' . '10FFFF' - '"' - '\' for "Unicode points from U+0020 to U+10FFFF except double quote and backslash". In EBNF one would to have explicitly list all the Unicode characters that match the McKeeman class definition - although the current Unicode 17 spec only defines [159,801](https://www.unicode.org/versions/Unicode17.0.0/#Summary) of the possible over a million Unicode points (up to U+10FFFF) a hard task.
 
